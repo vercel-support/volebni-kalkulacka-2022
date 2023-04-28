@@ -1,6 +1,6 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import { verify } from 'jsonwebtoken';
-import { prisma } from './prisma';
+import { prisma } from './prisma.ts';
 import type { User } from '@prisma/client';
 
 export async function authUser(

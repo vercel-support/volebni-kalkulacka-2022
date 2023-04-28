@@ -1,12 +1,12 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { prisma, getBody } from '../../src/server/prisma';
-import { authUser } from '../../src/server/auth';
+import { prisma, getBody } from '../../src/server/prisma.ts';
+import { authUser } from '../../src/server/auth.ts';
 import {
   errorRespond,
   respond404,
   respond405,
   prismaErrorHandler,
-} from '../../src/server/errors';
+} from '../../src/server/errors.ts';
 
 export default async function (req: VercelRequest, res: VercelResponse) {
   const resultId = req.query.id as string;

@@ -1,12 +1,12 @@
 import type { VercelRequest, VercelResponse } from '@vercel/node';
 import type { Prisma } from '@prisma/client';
-import { prisma, getBody } from '../../src/server/prisma';
-import { authUser } from '../../src/server/auth';
+import { prisma, getBody } from '../../src/server/prisma.ts';
+import { authUser } from '../../src/server/auth.ts';
 import {
   respond405,
   prismaErrorHandler,
   respond401,
-} from '../../src/server/errors';
+} from '../../src/server/errors.ts';
 
 export default async function (req: VercelRequest, res: VercelResponse) {
   const auth = await authUser(req, res);
