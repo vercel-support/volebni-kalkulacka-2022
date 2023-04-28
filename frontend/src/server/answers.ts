@@ -1,4 +1,4 @@
-import { prisma } from './prisma';
+import { prisma } from './prisma.ts';
 
 export interface AnswerToUserArgs {
   answerId: string;

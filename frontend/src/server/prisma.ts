@@ -1,7 +1,7 @@
 import { PrismaClient } from '@prisma/client';
 import { createHash } from 'crypto';
 import type { VercelResponse, VercelRequest } from '@vercel/node';
-import { respond400 } from './errors';
+import { respond400 } from './errors.ts';
 
 export const patchBigInt = () => {
   // Monkey patch BigInt toJSON to return a string.

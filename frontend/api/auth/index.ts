@@ -6,11 +6,11 @@ import { Strategy as FacebookStrategy } from 'passport-facebook';
 import { Strategy as GoogleStrategy } from 'passport-google-oauth20';
 import MagicLoginStrategy from 'passport-magic-login';
 import type { Profile } from 'passport';
-import { prisma } from '../../src/server/prisma';
-import { assignAnswerToUser } from '../../src/server/answers';
+import { prisma } from '../../src/server/prisma.ts';
+import { assignAnswerToUser } from '../../src/server/answers.ts';
 import ms from 'ms';
-import { respond404 } from '../../src/server/errors';
-import { sendEmail } from '../../src/server/mailing';
+import { respond404 } from '../../src/server/errors.ts';
+import { sendEmail } from '../../src/server/mailing.ts';
 
 const app: Express = express();
 
