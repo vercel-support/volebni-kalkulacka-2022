@@ -30,11 +30,11 @@ repos:
   #    hooks:
   #      - id: autopep8
 
-  - repo: https://github.com/pycqa/isort
-    rev: 5.10.1
-    hooks:
-      - id: isort
-        args: ["--profile", "google", "--filter-files"]
+  # - repo: https://github.com/pycqa/isort
+  #   rev: 5.10.1
+  #   hooks:
+  #     - id: isort
+  #       args: ["--profile", "google", "--filter-files"]
 
   - repo: https://github.com/asottile/pyupgrade
     rev: v2.12.0
